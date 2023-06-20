@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 public class CurrencyConverter {
 
     public static void main(String[] args) {
-        // Create the main frame
+        
         JFrame frame = new JFrame("Currency Converter");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(500, 350);
@@ -77,7 +77,7 @@ public class CurrencyConverter {
                 // Get the input amount
                 double amount = Double.parseDouble(amountField.getText());
 
-                // Get the selected currency
+                
                 String selectedCurrency = (String) currencyComboBox.getSelectedItem();
                 double conversionRate;
 
@@ -113,7 +113,7 @@ public class CurrencyConverter {
                     conversionRate *= 0.98;
                 }
 
-                // Convert the amount
+                
                 double result = amount * conversionRate;
 
 
